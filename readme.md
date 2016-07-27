@@ -4,13 +4,18 @@ This is a simple utility that will simulate an SSH endpoint as a Ciena, Cisco, o
 # To Run This
  * Download and install Linux (here Ubuntu)
  * Install docker 
-     apt-get install docker.io
+
+    apt-get install docker.io
+
  * Download this repo somewhere (here /root/FakeTelnet)
  * Build the container
-     cd /root/FakeTelnet
-     docker build -t gskyft .
+
+    cd /root/FakeTelnet
+    docker build -t gskyft .
+
  * Start the container
-     docker run -t -i -p 2222:22 --name ft gskyft
+
+    docker run -t -i -p 2222:22 --name ft gskyft
 
 # Command Set
 ## Juniper

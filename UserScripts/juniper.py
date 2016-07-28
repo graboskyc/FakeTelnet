@@ -2,6 +2,10 @@
 
 from Switch import *
 
-sw = Switch("10.0.2.142", "juniper")
-
-sw.Prompt()
+try:
+        sw = Switch("10.0.0.142", "juniper")
+        sw.Prompt()
+except KeyboardInterrupt:
+        print
+        print
+        exit(0)

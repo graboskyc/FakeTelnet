@@ -2,6 +2,10 @@
 
 from Switch import *
 
-sw = Switch("10.0.1.141", "ios")
-
-sw.Prompt()
+try:
+        sw = Switch("10.0.0.141", "ios")
+        sw.Prompt()
+except KeyboardInterrupt:
+        print
+        print
+        exit(0)

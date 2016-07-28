@@ -11,8 +11,8 @@ RUN rm -rf /etc/ssh/ssh*key
 RUN dpkg-reconfigure openssh-server
 RUN yes | ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ""
 RUN yes | ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ""
-#RUN chmod +r /etc/ssh/ssh*key
 
+RUN rm -rf /opt/FakeTelnet
 RUN git clone https://github.com/graboskyc/FakeTelnet.git /opt/FakeTelnet
 RUN chmod +x /opt/FakeTelnet/UserScripts/*
 

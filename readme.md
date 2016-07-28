@@ -21,6 +21,7 @@ This is a simple utility that will simulate an SSH endpoint as a Ciena, Cisco, o
  * Set default route (`set system backup-router 10.0.0.1`)  
  * Set default route (`set routing-options static route default nexthop 10.0.0.1 retain noreadvertise`)  
  * Save configuration (`commit`)
+ * Kill connection (`exit`)
 
 ## Cisco
  * SSH into the device on port 2222 using username `cisco` and password `cisco`
@@ -32,6 +33,7 @@ This is a simple utility that will simulate an SSH endpoint as a Ciena, Cisco, o
  * Exit configure mode (`end`)  
  * Save configuration (`write memory`)  
  * Enter any bad command and it will spit it back to you
+ * Kill connection (`exit`)
 
 ## Ciena
  * SSH into the device on port 2222 using username `su` and password `wwp`
@@ -47,3 +49,4 @@ This is a simple utility that will simulate an SSH endpoint as a Ciena, Cisco, o
  * Delete a VLAN (`vlan delete vlan 100`)  
  * Save configuration (`configuration save`)  
  * Enter any bad command and it will spit it back to you
+ * Kill connection (`exit`)

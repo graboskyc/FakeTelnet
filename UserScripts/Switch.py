@@ -210,6 +210,8 @@ class Switch:
 				self._currPrompt = self._hostname + "(config)#"
 			elif (cmdArray[0] == "end"):
                                 self._currPrompt = self._hostname + "#"
+			elif (cmdArray[0] == "exit"):
+				exit(0)
 			else:
 				print self._badPrompt 
 		
@@ -235,6 +237,8 @@ class Switch:
 					elif (cmdArray[2] == "host-name"):
 						# set system host-name hostname
 						self._hostname = cmdArray[3]
+			elif (cmdArray[0] == "exit"):
+        			exit(0)
 		##################
                 # Ciena
                 ##################
@@ -348,5 +352,7 @@ class Switch:
 					while ( i < 41 ):
 						self.statValList.append('0')
 						i = i + 1
+			elif (cmdArray[0] == "exit"):
+        			exit(0)
 			else:
 				print self._badPrompt %(cmd)

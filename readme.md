@@ -7,7 +7,7 @@ This is a simple utility that will simulate an SSH endpoint as a Ciena, Cisco, o
 * Download this repo somewhere (here `/root/FakeTelnet`)
 * Change to the directory `cd /root/FakeTelnet`
 * Build the container `docker build -t gskyft .`
-* Start the container `docker run -t -i -p 2222:22 --name ft gskyft`
+* Start the container `docker run -t -i -d -p 2222:22 --name ft gskyft`
 * After that, you should be able to ssh to the server on port 2222
 
 # Command Set

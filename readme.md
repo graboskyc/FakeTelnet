@@ -5,6 +5,10 @@ This is a simple utility that will simulate an SSH endpoint as a Ciena, Cisco, o
 ## System prep
 * Download and install Linux (here Ubuntu)
 * Install docker `apt-get install docker.io`
+* Note that to do installs and start containers, you must be `root` or use the `sudo` command prefixed to each one
+* If installing Linux onto a VM, make sure the network adaptor is in the correct mode depending on use case, such as bridged if you want to SSH in from another machine than the VM host
+* If you want to start the container at boot, [follow this tutorial](https://docs.docker.com/engine/admin/host_integration/) after getting the container onto your system via the "From Source" or "From DockerHub" sections below
+
 
 ## From Source
 * Download this repo somewhere (here `/root/FakeTelnet`)
